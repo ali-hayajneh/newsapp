@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Weather Application</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <nav id="navbar" class="navbar navbar-expand-lg">
+            <div class="nav navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="../index/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html">About</a>
+                </li>
+                <form class="form-inline" action='../weather/search.html' method="GET">
+                    <input id="get_weather" class="form-control" type="search" placeholder="Search" name="something">
+                    <button id="btn_weather" class="btn btn-primary">Get Weather</button>
+                </form>
+            </div>
+
+        </nav>
+    </div>
+
+    <div class="container">
+        <div id="about_paragraph">
+            <p>This application was developed with the intent to tell the current weather. It was created for my first website utilizing bootstrap, javascript, and API calls.</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
