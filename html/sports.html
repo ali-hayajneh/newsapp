@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+
+</head>
+
+<body id="index">
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Now Daily News</h1>
+        </div>
+
+        <nav id="navbar" class="navbar navbar-expand justify-content-center">
+            <div class="nav navbar-nav">
+                <li id="li1" class="nav-item">
+                    <a href="../html/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../html/politics.html">Politics</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../html/sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../html/entertainment.html">Entertainment</a>
+                </li>
+                <li class="nav-item">
+                    <a href='../html/weather.html'>Weather</a>
+                </li>
+            </div>
+        </nav>
+
+        <div id="news_table" class="container">
+            <div id="news_table_header" class="row">
+                <div id="spacer" class="col-lg-4 col-sm-4">
+                    <div id="h_container" class="container">
+                        <a id="news1"></a>
+                        <img id="image1">
+                    </div>
+                </div>
+                <div id="spacer" class="col-lg-4 col-sm-4">
+                    <div id="h_container" class="container">
+                        <a id="news2"></a>
+                        <img id="image2">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    <div id="h_container" class="container">
+                        <a id="news3"></a>
+                        <img id="image3">
+                    </div>
+                </div>
+            </div>
+            <div id="list"></div>
+        </div>
+
+    </div>
+    <div>
+        <footer id="footer" class="page-footer font-small pt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-3">
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12">
+                        <p>Created By Nicholas Varelas</p>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-12">
+                        <ul class="list-unstyled">
+                            <li id="li_about" class="nav-item">
+                                <a href="../html/about.html">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script id="myScript" data-name="sports" src='../js/index.js'></script>
+</body>
+<footer>
+    <p>test</p>
+</footer>
+
+</html>
+
+<!-- Windy API KEY: OdmfsInVoRztyyPdXEihssKV5q00Tw42-->
+<!--  Google API KEY: AIzaSyBP_vSPz_pQKu85ebXxBQOu6YgwzM3hEg4  -->
+<!-- News API KEY: d3e44f05b36e4cc2892bc96984c735e0 -->

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
+    <script src="https://api4.windy.com/assets/libBoot.js"></script>
+</head>
+
+<body id="index">
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Now Daily News</h1>
+        </div>
+
+        <nav id="navbar" class="navbar navbar-expand justify-content-center">
+            <div class="nav navbar-nav">
+                <li id="li1" class="nav-item">
+                    <a href="../html/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../html/politics.html">Politics</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../html/sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../html/entertainment.html">Entertainment</a>
+                </li>
+                <li class="nav-item">
+                    <a href='../html/weather.html'>Weather</a>
+                </li>
+            </div>
+        </nav>
+
+        <form id="search_form" class="form-inline" action='../weather/search.html' method="GET">
+            <input id="get_weather" class="form-control" type="search" placeholder="Search" name="search_city">
+            <button id="btn_weather" class="btn btn-primary">Get Weather</button>
+        </form>
+
+        <div id="weather_header">
+            <div class="row">
+                <h1 class="col-sm-12" id="city_name"></h1>
+            </div>
+            <div id="windy_row" class="row">
+                <div id="weather_info" class="col-lg-3 col-md-4 col-sm-5">
+                    <div id="r1" class="row">
+                        <div class="col-sm-12">
+                            <h2 id="city_temp"></h2>
+                        </div>
+                    </div>
+                    <div id="r2" class="row">
+                        <div class="col-sm-12">
+                            <h5 id="weather_desc"></h5>
+                        </div>
+                    </div>
+                    <div id="r3" class="row">
+                        <ul class="col-sm-12">
+                            <li id="temp_max"></li>
+                            <li id="temp_min"></li>
+                            <li id="humidity"></li>
+                            <li id="wind"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-7" id="windy"></div>
+            </div>
+        </div>
+
+        <div id="weather_table">
+            <table class="table table-hover" id="myTable">
+                <tbody id="body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div>
+        <footer id="footer" class="page-footer font-small pt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-3">
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12">
+                        <p>Created By Nicholas Varelas</p>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-12">
+                        <ul class="list-unstyled">
+                            <li id="li_about" class="nav-item">
+                                <a href="../html/about.html">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
