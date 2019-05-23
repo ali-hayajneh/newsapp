@@ -2,16 +2,16 @@
 let url;
 var page = document.getElementById("myScript").getAttribute('data-name');
 if(page === 'index'){
-    url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=d3e44f05b36e4cc2892bc96984c735e0';
+    url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=?';
 }
 else if(page === 'politics'){
-    url ='https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=d3e44f05b36e4cc2892bc96984c735e0';
+    url ='https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=?';
 }
 else if(page === 'sports'){
-    url = 'https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=d3e44f05b36e4cc2892bc96984c735e0';
+    url = 'https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=?';
 }
 else if(page === 'entertainment'){
-    url = 'https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=d3e44f05b36e4cc2892bc96984c735e0';
+    url = 'https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=?';
 }
 
 fetch(url)
